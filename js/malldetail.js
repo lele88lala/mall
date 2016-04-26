@@ -11,11 +11,14 @@ var xDown = null;
 var slideWidth = document.querySelector(".holder").offsetWidth;
 var index = 0;
 var xDiff = null;
+var arr = new Array("dot-pic1","dot-pic2","dot-pic3");
 var len = document.querySelector("html").offsetWidth/20;
 function touchHandler(e) {
     if (e.type == "touchstart") {
         xDown = e.touches[0].clientX;
         document.querySelector(".animate").removeAttribute("animate");
+        document.querySelector("#"+arr[index]+"").setAttribute("class", "docselectcolor");
+        //document.querySelector("#"+arr[index]+"").classList.remove("dotcolor");
     } else if (e.type == "touchmove") {
         var xUp = e.touches[0].clientX;
         xDiff = index*slideWidth+xDown-xUp;
@@ -30,6 +33,8 @@ function touchHandler(e) {
             } else if (xDiff < index*slideWidth && index > 0) {
                 index--;
             }
+
+            document.querySelector("#"+arr[index]+"").setAttribute("class", "dotcolor");
         }
         document.querySelector(".animate").style.cssText="transform:translate3d(-" + index*slideWidth + "px,0,0)";
     }

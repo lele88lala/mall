@@ -6,6 +6,31 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/mail.css">
 </head>
+<style>
+    .dot li{
+        list-style: none;
+        display:inline-block;
+        width:0.4rem;
+        height:0.4rem;
+        border-radius: 0.2rem;
+        background-color: #e0e0e0;
+        margin-left:0.4rem;
+    }
+    .dot{
+        position:absolute;
+        top:13.5rem;
+        left:13.5rem;
+    }
+    .dotcolor{
+        background-color:red !important;
+    }
+    .docselectcolor{
+        background-color: #e0e0e0 !important;
+    }
+    .dot-pic1{
+        background-color:red !important;
+    }
+</style>
 <body>
 <div id="addWrap">
         <div id="holder" class="holder">
@@ -22,6 +47,11 @@
             </div>
         </div>
     </div>
+    <ul class="dot">
+        <li id="dot-pic1" class="dot-pic1"></li>
+        <li id="dot-pic2" class="dot-pic2"></li>
+        <li id="dot-pic3" class="dot-pic3"></li>
+    </ul>
 </div>
 </body>
 <script type="text/javascript" src="js/malldetail.js"></script>
