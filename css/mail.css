@@ -1,0 +1,89 @@
+.goods{
+    width:19rem;
+    height:15.5rem;
+    background-color:#e5e5e5;
+    margin:0.9rem auto;
+    position:relative;
+    overflow: hidden;
+}
+.goods-picture,.image{
+    width:19rem;
+    height:15.5rem;
+}
+.image{
+}
+.package-list{
+    position:absolute;
+    top:13.7rem;
+    left:0.9rem;
+}
+.price{
+    position:absolute;
+    top:13.7rem;
+    right:0.9rem;
+}
+.before-price{
+    font-size:0.5rem;
+    margin-left:0.3rem;
+    position:relative;
+    bottom:0.1rem;
+}
+.package-code{
+    font-size:1.3rem;
+    font-weight: bolder;
+    color:red;
+}
+.package{
+    font-size:0.75rem;
+    position:relative;
+    bottom:0.15rem;
+}
+.before-price, .present-price{
+    display:inline-block;
+}
+.present-price{
+    color:red;
+    font-size:0.9rem;
+    positon:relative;
+}
+.strike-center {
+    position: relative;
+    white-space: nowrap; /* would center line-through in the middle of the wrapped lines */
+}
+
+.strike-center:after {
+    border-top: 1px solid #000;
+    position: absolute;
+    content: "";
+    right: 0;
+    top:40%;
+    left: 0;
+}
+.noMoreData{
+    width:inherit;
+    height:2rem;
+    background-color:#e5e5e5;
+    text-align:center;
+    line-height: 2rem;
+}
+.slider{
+    width:19rem;
+    height:15.5rem;
+}
+
+.animate {
+    transition: transform 0.3s ease-out;
+}
+.holder{
+    width:19rem;
+    height:15.5rem;
+    margin:0rem auto;
+    overflow: hidden;
+}
+.wrap{
+    width:57rem;
+    height:15.5rem;
+}
+.slider{
+    float:left;
+}

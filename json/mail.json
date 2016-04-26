@@ -1,0 +1,36 @@
+{
+
+  "goods": [
+    {
+      "img":"imgs/cloth.jpg",
+      "codeNum": "01",
+      "package":"套餐A",
+      "priceTag":"￥",
+      "beforePrice":280,
+      "beforePriceTag":"原价",
+      "presentPrice":180
+
+    },
+    {
+      "img":"imgs/cloth3.jpg",
+      "codeNum": "01",
+      "package":"套餐A",
+      "priceTag":"￥",
+      "beforePrice":200,
+      "beforePriceTag":"原价",
+      "presentPrice":320
+
+    },
+    {
+      "img":"imgs/cloth2.jpg",
+      "codeNum": "01",
+      "package":"套餐A",
+      "priceTag":"￥",
+      "beforePrice":250,
+      "beforePriceTag":"原价",
+      "presentPrice":100
+
+    }
+  ]
+
+}
