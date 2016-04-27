@@ -33,9 +33,8 @@ function touchHandler(e) {
             } else if (xDiff < index*slideWidth && index > 0) {
                 index--;
             }
-
-            document.querySelector("#"+arr[index]+"").setAttribute("class", "dotcolor");
         }
+        document.querySelector("#"+arr[index]+"").setAttribute("class", "dotcolor");
         document.querySelector(".animate").style.cssText="transform:translate3d(-" + index*slideWidth + "px,0,0)";
     }
 }
