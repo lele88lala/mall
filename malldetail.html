@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/malldetail.css">
 </head>
-<body style="margin:0rem;">
+
+<body>
 <div id="addWrap">
-        <div id="holder" class="holder">
-            <div class="wrap animate">
-                <div class="slider">
-                    <img class = "image" src="imgs/cloth4.jpg"/>
-                </div>
-                <div class="slider">
-                    <img class="image" src="imgs/cloth7.jpg"/>
-                </div>
-                <div class="slider">
-                    <img class = "image" src="imgs/cloth8.jpg"/>
-                </div>
+    <div id="holder" class="holder">
+        <div class="wrap animate">
+            <div class="slider">
+                <img class="image" src="imgs/cloth4.jpg"/>
+            </div>
+            <div class="slider">
+                <img class="image" src="imgs/cloth7.jpg"/>
+            </div>
+            <div class="slider">
+                <img class="image" src="imgs/cloth8.jpg"/>
             </div>
         </div>
     </div>
@@ -30,18 +31,36 @@
 </div>
 <div id="goods-detail">
     <div id="package">
-        <span>NIKE篮球服饰套餐</span>
+        NIKE篮球服饰套餐
     </div>
     <div id="now-price">
-       <lable>￥</lable> <span>400</span>
+        <lable>￥</lable>
+        <span>400</span>
     </div>
     <div id="package-detail">
-        <span>NIKE篮球衣+NICK篮球</span>
+        NIKE篮球衣+NICK篮球
     </div>
     <div id="before-price" class="strike-center">
-        <lable>￥</lable><span>800</span>
+        <lable>￥</lable>
+        <span>800</span>
+    </div>
+</div>
+<div id="buy-count-wrap">
+    <div id="buy-count">
+        购买数量：
+    </div>
+    <div id="rule-one">
+        斯伯丁NBA篮球规格
+    </div>
+    <div id="rule-two">
+        Bounce球衣规格
     </div>
 </div>
 </body>
+<script>
+    document.body.addEventListener("touchstart", function (e) {
+        e.preventDefault();
+    })
+</script>
 <script type="text/javascript" src="js/malldetail.js"></script>
 </html>

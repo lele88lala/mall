@@ -5,6 +5,7 @@ window.onload=loadData("json/mail.json");
 
 
 
+
 function loadData(data_file) {
     //var data_file = "json/mail.json";
     var http_request = new XMLHttpRequest();

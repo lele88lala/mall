@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
 .dot li{
     list-style: none;
     display:inline-block;
@@ -10,7 +17,7 @@
 .dot{
     position:absolute;
     top:15rem;
-    left:13.6rem;
+    left:14rem;
 }
 .dotcolor{
     background-color:red !important;
@@ -49,9 +56,9 @@
 }
 #goods-detail{
     width:20rem;
-    height:5rem;
-    border-bottom: solid 0.1rem;
-    border-bottom-color: #e5e5e5;
+    height:6rem;
+    /*border-bottom:thin;*/
+
     font-size:0.8rem;
 }
 .image{
@@ -72,7 +79,7 @@
     margin-left:3rem;
 }
 #package,#now-price{
-    margin-top:2rem;
+    margin-top:3rem;
 }
 #package-detail,#before-price{
     margin-top:0.7rem;
@@ -97,4 +104,27 @@
     right: 0;
     top:50%;
     left: 0;
+}
+#buy-count-wrap{
+    width:20rem;
+    height:100rem;
+    background:#f7f7f7;
+}
+#buy-count-wrap,#buy-count,#rule-one,#rule-two{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #e5e5e5;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: #e5e5e5;
+}
+#buy-count,#rule-one,#rule-two{
+    width:20rem;
+    height:3rem;
+    background-color:white;
+    margin-top:0.3rem;
+}
+#buy-count{
+    font-size:0.8rem;
+    color:#7b7a7a;
 }
