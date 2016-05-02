@@ -40,9 +40,8 @@ function loadData(data_file) {
             //document.getElementById("Name").innerHTML = jsonObj.name;
             //document.getElementById("Country").innerHTML = jsonObj.country;
             for (var i = 0 ; i < jsonObj.goods.length;i++) {
-                var g = jsonObj.goods[i];
-                var arr = new Array(g.img, g.codeNum, g.package, g.priceTag, g.presentPrice, g.beforePriceTag, g.beforePrice);
-                start(arr);
+                var goods = jsonObj.goods[i];
+                start(goods);
             }
             ret = 0;
         } else if (http_request.readyState ==4 && http_request.status == 404) {
@@ -64,7 +63,7 @@ function loadData(data_file) {
 function detail() {
     location.href = "malldetail.html";
 }
-function start(arr) {
+function start(goods) {
     //model 1
     var div = document.createElement("div");
     div.setAttribute("class", "goods");
@@ -76,7 +75,7 @@ function start(arr) {
     var img = document.createElement("img");
     img.setAttribute("class", "goods-picture");
     // add img
-    img.setAttribute("src", arr[0]);
+    img.setAttribute("src", goods.img);
     divImg.appendChild(img);
 
     //model3
@@ -85,11 +84,11 @@ function start(arr) {
     var codeSpan = document.createElement("span");
     codeSpan.setAttribute("class", "package-code");
     //add value
-    codeSpan.innerHTML = arr[1];
+    codeSpan.innerHTML = goods.codeNum;
     var packageSpan = document.createElement("span");
     packageSpan.setAttribute("class", "package");
     //add value
-    packageSpan.innerHTML = arr[2];
+    packageSpan.innerHTML = goods.package;
     divList.appendChild(codeSpan);
     divList.appendChild(packageSpan);
 
@@ -100,21 +99,21 @@ function start(arr) {
     divPresentPrice.setAttribute("class", "present-price");
     var spanPrice = document.createElement("span");
     //add value
-    spanPrice.innerHTML = arr[3];
+    spanPrice.innerHTML = goods.priceTag;
     var spanPre = document.createElement("span");
     spanPre.setAttribute("class", "pre");
     //add value
-    spanPre.innerHTML = arr[4];
+    spanPre.innerHTML = goods.presentPrice;
     divPresentPrice.appendChild(spanPrice);
     divPresentPrice.appendChild(spanPre);
     var divBeforePrice = document.createElement("div");
     divBeforePrice.setAttribute("class", "before-price strike-center");
     var lab = document.createElement("label");
     //add value
-    lab.innerHTML = arr[5];
+    lab.innerHTML = goods.beforePriceTag;
     var spanBefore = document.createElement("span");
     //add value
-    spanBefore.innerHTML = arr[6];
+    spanBefore.innerHTML = goods.beforePrice;
     divBeforePrice.appendChild(lab);
     divBeforePrice.appendChild(spanBefore);
     divPrice.appendChild(divPresentPrice);

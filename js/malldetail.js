@@ -38,4 +38,37 @@ function touchHandler(e) {
         document.querySelector(".animate").style.cssText = "transform:translate3d(-" + index * slideWidth + "px,0,0)";
     }
 }
+//buy count
+var count = 1;
+document.querySelector(".img-minus").onclick = function(){
+  if (count == 1) {
+      document.querySelector(".count").innerHTML= count;
+  } else {
+      count--;
+      document.querySelector(".count").innerHTML= count;
+  }
+}
 
+document.querySelector(".img-plus").onclick = function(){
+        count++;
+        document.querySelector(".count").innerHTML= count;
+}
+
+var rules = document.querySelectorAll(".rule");
+for (var index = 0 ;index < rules.length; index++) {
+    rules[index].onclick = function () {
+        if (this.querySelector(".arrow").classList.contains("arrow-down")) {
+            this.querySelector(".arrow").classList.remove("arrow-down");
+            this.querySelector(".arrow").classList.add("arrow-up");
+            this.querySelector(".rule-detail").style.height = "10rem";
+            this.querySelector(".rule-detail").classList.add("rule-detail-border");
+        } else {
+            this.querySelector(".arrow").classList.remove("arrow-up");
+            this.querySelector(".arrow").classList.add("arrow-down");
+            this.querySelector(".rule-detail").style.height = "0rem";
+            this.querySelector(".rule-detail").classList.remove("rule-detail-border");
+        }
+
+
+    }
+}
