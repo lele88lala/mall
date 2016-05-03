@@ -106,13 +106,18 @@ body {
     height:100rem;
     background:#f7f7f7;
 }
-#buy-count-wrap,#buy-count,#rule-one,#rule-two,.rule-detail-border{
+#buy-count-wrap,#buy-count,#rule-one,#rule-two{
     border-bottom-style: solid;
     border-bottom-width: thin;
     border-bottom-color: #e5e5e5;
     border-top-style: solid;
     border-top-width: thin;
     border-top-color: #e5e5e5;
+}
+.rule-detail-border{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #e5e5e5;
 }
 #buy-count,#rule-one,#rule-two{
     height:3rem;
@@ -144,6 +149,7 @@ body {
     width:20rem;
     background-color: white;
     transition: height 0.5s ease-in-out;
+    overflow: hidden;
 }
 .arrow-down{
     width:0.5rem;
@@ -172,8 +178,11 @@ body {
     display:inline-block;
     width:3rem;
     height:2rem;
-    background-color:#e5e5e5;
+    background-color:white;
     margin-left:0.5rem;
+    border:solid 0.1rem;
+    border-color:#e0e0e0;
+    border-radius: 0.05rem;
 }
 .rule-words{
     margin-left:1rem;
@@ -184,6 +193,53 @@ body {
     display:inline-block;
     width:3rem;
     height:2rem;
-    background-color:lemonchiffon;
+    border:solid 0.1rem;
+    border-color:yellowgreen;
+    background-color:white;
     margin-left:0.5rem;
+    border-radius: 0.05rem;
+}
+.bottom-content {
+    position: fixed;
+    bottom: 0px;
+
+    width: 100%;
+    height: 2.5rem;
+    background-color: #eee;
+    display: block;
+}
+
+.total-label, .total-figure {
+    line-height: 2.5rem;
+}
+
+.total-label {
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.total-figure {
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.total-figure:before {
+    content: '￥'
+}
+
+.buy-now{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+    background-color: orangered;
+
+    height: 2.5rem;
+    line-height: 2.5rem;
+
+    margin-left: 0rem;
+    padding: 0 2rem;
+    color: #fff;
 }
